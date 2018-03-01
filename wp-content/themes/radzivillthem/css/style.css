@@ -1,0 +1,301 @@
+body{
+
+
+	-webkit-font-smoothing: antialiased;
+	-webkit-overflow-scrolling: touch;
+}
+
+p-0{
+	padding: 0;
+}
+/*Навигация*/
+.navbar-dark .navbar-nav a.nav-link{
+	font-size: 30px;
+}
+div.dropdown-menu a.blue-bg:hover{
+	color: #fff;
+	background-color: #007bff;
+}
+a.dropdown-toggle::after{
+	margin-left: -2.745em;
+	vertical-align: -0.7em;
+}
+div.dropdown-menu{
+	margin: 0.125rem -38px 0;
+}
+/*Header wrap*/
+.banner {
+	background: url(../img/carousel-2.jpg) no-repeat center top;
+	margin-top: 0;
+	padding-top:20px;
+	text-align:center;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 500px;
+	width: 100%;
+	
+	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
+	-o-background-size: 100%;
+	background-size: 100%;
+
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+#opasity-block {
+	background-color: rgba(0, 0, 0, 0.5);
+
+	margin-top: -20px;
+	padding-top:20px;
+	text-align:center;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 500px;
+	width: 100%;
+	
+	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
+	-o-background-size: 100%;
+	background-size: 100%;
+
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+}
+
+.bg-y{
+	background-color: #ffff00;
+}
+nav.border-b{
+	border-bottom: 1px solid #ffc107;
+}
+/*footer*/
+.full {
+	width: 100%;	
+}
+.gap {
+	height: 30px;
+	width: 100%;
+	clear: both;
+	display: block;
+}
+.footer {
+	background: #ffff00;
+	height: auto;
+	padding-bottom: 30px;
+	position: relative;
+	width: 100%;
+	border-bottom: 1px solid #CCCCCC;
+	border-top: 1px solid #DDDDDD;
+}
+.footer p {
+	margin: 0;
+}
+.footer img {
+	max-width: 100%;
+}
+.footer h3 {
+	border-bottom: 1px solid #000;
+	color: #000;
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 27px;
+	padding: 40px 0 10px;
+	text-transform: uppercase;
+}
+.footer ul {
+	font-size: 13px;
+	list-style-type: none;
+	margin-left: 0;
+	padding-left: 0;
+	margin-top: 15px;
+	color: #7F8C8D;
+}
+.footer ul li a {
+	padding: 0 0 5px 0;
+	display: block;
+}
+.footer a {
+	color: #000;
+}
+.supportLi h4 {
+	font-size: 20px;
+	font-weight: lighter;
+	line-height: normal;
+	margin-bottom: 0 !important;
+	padding-bottom: 0;
+}
+.newsletter-box input#appendedInputButton {
+	background: #FFFFFF;
+	display: inline-block;
+	float: left;
+	height: 30px;
+	clear: both;
+	width: 100%;
+}
+.newsletter-box .btn {
+	border: medium none;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+	-ms-border-radius: 3px;
+	border-radius: 3px;
+	display: inline-block;
+	height: 40px;
+	padding: 0;
+	width: 100%;
+	color: #fff;
+}
+.newsletter-box {
+	overflow: hidden;
+}
+.bg-gray {
+	background-image: -moz-linear-gradient(center bottom, #BBBBBB 0%, #F0F0F0 100%);
+	box-shadow: 0 1px 0 #B4B3B3;
+}
+.social li {
+	background: none repeat scroll 0 0 #B5B5B5;
+	border: 2px solid #B5B5B5;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	-ms-border-radius: 50%;
+	border-radius: 50%;
+	float: left;
+	height: 36px;
+	line-height: 36px;
+	margin: 0 8px 0 0;
+	padding: 0;
+	text-align: center;
+	width: 36px;
+	transition: all 0.5s ease 0s;
+	-moz-transition: all 0.5s ease 0s;
+	-webkit-transition: all 0.5s ease 0s;
+	-ms-transition: all 0.5s ease 0s;
+	-o-transition: all 0.5s ease 0s;
+}
+.social li:hover {
+	transform: scale(1.15) rotate(360deg);
+	-webkit-transform: scale(1.1) rotate(360deg);
+	-moz-transform: scale(1.1) rotate(360deg);
+	-ms-transform: scale(1.1) rotate(360deg);
+	-o-transform: scale(1.1) rotate(360deg);
+}
+.social li a {
+	color: #EDEFF1;
+}
+.social li:hover {
+	border: 2px solid #2c3e50;
+	
+}
+/*.social li a i {
+	font-size: 16px;
+	margin: 0 0 0 3px;
+	color: #ffff00;
+	}*/
+	.social li a i.fa-facebook {
+		font-size: 16px;
+		margin: -18px 0 0px 9px;
+		color: #ffff00;
+
+	}
+	.social li a i.fa-skype {
+		font-size: 18px;
+		margin: 0px -5px 0 3px;
+		color: #ffff00;
+	}
+	.social li a i.fa-google-plus {
+		font-size: 16px;
+		margin: 9px 2px 0 2px;
+		color: #ffff00;
+	}
+
+	.footer-bottom {
+		background: #E3E3E3;
+		border-top: 1px solid #DDDDDD;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	.footer-bottom p.pull-left {
+		padding-top: 6px;
+	}
+	.payments {
+		font-size: 1.5em;	
+	}
+	/*main*/
+	div.icon-item{
+		width: 40px;
+		height: 40px;
+	}
+	/*accounting page*/
+	div.text-center i.fa-calculator:before {
+		content: "\f1ec";
+		font-size: 40px;
+	}
+	div.text-center i.fa-usd:before {
+		content: "\f155";
+		font-size: 40px;
+	}
+	div.text-center i.fa-diamond:before {
+		content: "\f219";
+		font-size: 40px;
+	}
+	/* arrow*/
+	.text-block {
+		width: 250px;
+		margin: 50px;
+	}
+
+	#go-top {
+		position: fixed; 
+		bottom: 7%; 
+		right: 7%;
+		text-align: center;
+		cursor:pointer; 
+		display:none;
+		width: 7%;
+		height: 9%;
+		/* background: #c0c0c0;*/
+		/*line-height: 30px;*/
+		/*border-radius: 5px;*/
+	}
+
+	#go-top:hover {
+		/* background: #333;*/
+		color: #000;
+	}
+	.fa-arrow-circle-up:before {
+		content: "\f0aa";
+		font-size: 60px;
+
+	}
+/*#navMenu{
+	position: fixed;
+	top: 30%;
+	left: 0%;
+
+	}*/
+	/*Map!!!!!*/
+/* Always set the map height explicitly to define the size of the div
+* element that contains the map. */
+#map {
+	height: 100%;
+	min-height: 300px;
+}
+#faceB{
+	background-color: #29487d;
+	border-color: #29487d;
+}
+#skype{
+	background-color: #1686D9;
+	border-color: #1686D9;
+}
+#google{
+	background-color: #df4b38;
+	border-color: #df4b38;
+}
