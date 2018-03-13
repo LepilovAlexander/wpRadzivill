@@ -1,6 +1,3 @@
-
-// WoW.JS
-new WOW().init();
 // arrow
 $(document).ready(function(){
   $('body').append('<a href="#" id="go-top" title="Вверх"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></a>');

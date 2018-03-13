@@ -65,6 +65,28 @@
     <!--/.footer-bottom-->
 </footer>
 <?php wp_footer(); ?>
+<link rel="stylesheet" href="<?php bloginfo( 'template_directory' ) ?>/css/style.css">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="<?php bloginfo( 'template_directory' ) ?>/css/bootstrap.min.css">
+<!-- fonts -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Animate CSS + WoW.JS -->
+<link rel="stylesheet" href="<?php bloginfo( 'template_directory' ) ?>/css/animate.css">
+<script src="<?php bloginfo( 'template_directory' ) ?>/js/wow.min.js"></script>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="<?php bloginfo( 'template_directory' ) ?>/js/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+        integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
+<script src="<?php bloginfo( 'template_directory' ) ?>/js/bootstrap.min.js"></script>
+<script src="<?php bloginfo( 'template_directory' ) ?>/js/script.js"></script>
+<script type="text/javascript"
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBcQMSM28AVgOM92kGziX8UQjjBO5AhqEU&callback=initMap"
+        async defer></script>
+<!--WoW.JS-->
+<script>new WOW().init();</script>
 
 </body>
 </html>

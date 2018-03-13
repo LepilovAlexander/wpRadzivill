@@ -125,7 +125,7 @@ class FW_Option_Type_Icon extends FW_Option_Type
 	{
 		return array(
 			'value' => '',
-			'set'   => 'font-awesome',
+			'set'   => 'font-awesome.css',
 		);
 	}
 
@@ -179,8 +179,8 @@ class FW_Option_Type_Icon extends FW_Option_Type
 		// NOTE Take into account backward compatibility
 
 		return array(
-			'font-awesome' => array( // http://fortawesome.github.io/Font-Awesome/icons
-				'font-style-src' => fw_get_framework_directory_uri('/static/libs/font-awesome/css/font-awesome.min.css'),
+			'font-awesome.css' => array( // http://fortawesome.github.io/Font-Awesome/icons
+				'font-style-src' => fw_get_framework_directory_uri('/static/libs/font-awesome.css/css/font-awesome.css.min.css'),
 				'container-class' => 'fa-lg', // some fonts need special wrapper class to display properly
 				'groups' => array (
 					'web-application' => __('Web Application Icons', 'fw'),
@@ -806,7 +806,7 @@ class FW_Option_Type_Icon extends FW_Option_Type
 					'fa fa-firefox' => array( 'group' => 'brand' ),
 					'fa fa-first-order' => array( 'group' => 'brand' ),
 					'fa fa-flickr' => array( 'group' => 'brand' ),
-					'fa fa-font-awesome' => array( 'group' => 'brand' ),
+					'fa fa-font-awesome.css' => array( 'group' => 'brand' ),
 					'fa fa-fonticons' => array( 'group' => 'brand' ),
 					'fa fa-fort-awesome' => array( 'group' => 'brand' ),
 					'fa fa-forumbee' => array( 'group' => 'brand' ),

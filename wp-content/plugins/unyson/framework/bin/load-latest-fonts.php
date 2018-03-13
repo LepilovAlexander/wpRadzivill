@@ -62,11 +62,11 @@ $packs = array(
 		)
 	),
 
-	'font-awesome' => array(
-		'name' => 'font-awesome',
+	'font-awesome.css' => array(
+		'name' => 'font-awesome.css',
 		'github-repo' => 'FortAwesome/Font-Awesome',
-		'css-file' => 'css/font-awesome.min.css',
-		'css-file-output' => 'font-awesome.min.css',
+		'css-file' => 'css/font-awesome.css.min.css',
+		'css-file-output' => 'font-awesome.css.min.css',
 		'fonts' => array(
 			'fonts/FontAwesome.otf',
 			'fonts/fontawesome-webfont.eot',

@@ -10,7 +10,7 @@ class FW_Icon_V2_Packs_Loader
 	 * This array will contain name of packs retrieved from the
 	 * `fw:option_type:icon-v2:filter_packs` filter.
 	 *
-	 * array( 'font-awesome', 'unycon' )
+	 * array( 'font-awesome.css', 'unycon' )
 	 */
 	public $filtered_icon_packs = null;
 
@@ -340,19 +340,19 @@ class FW_Icon_V2_Packs_Loader
 				),
 			),
 
-			'font-awesome' => array(
-				'name' => 'font-awesome',
+			'font-awesome.css' => array(
+				'name' => 'font-awesome.css',
 				'title' => 'Font Awesome',
 				'css_class_prefix' => 'fa',
 				'css_file' => fw_get_framework_directory(
-					'/static/libs/font-awesome/css/font-awesome.min.css'
+					'/static/libs/font-awesome.css/css/font-awesome.css.min.css'
 				),
 
 				'css_file_uri' => fw_get_framework_directory_uri(
-					'/static/libs/font-awesome/css/font-awesome.min.css'
+					'/static/libs/font-awesome.css/css/font-awesome.css.min.css'
 				),
 
-				'admin_wp_enqueue_handle' => 'font-awesome'
+				'admin_wp_enqueue_handle' => 'font-awesome.css'
 			),
 
 			'entypo' => array(

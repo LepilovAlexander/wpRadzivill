@@ -2,8 +2,8 @@
 
 if (! is_admin()) {
 	wp_register_style(
-		'font-awesome',
-		fw_get_framework_directory_uri('/static/libs/font-awesome/css/font-awesome.min.css'),
+		'font-awesome.css',
+		fw_get_framework_directory_uri('/static/libs/font-awesome.css/css/font-awesome.css.min.css'),
 		array(),
 		fw()->manifest->get_version()
 	);

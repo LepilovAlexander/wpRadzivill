@@ -470,8 +470,8 @@ final class _FW_Component_Backend {
 		}
 
 		wp_register_style(
-			'font-awesome',
-			fw_get_framework_directory_uri( '/static/libs/font-awesome/css/font-awesome.min.css' ),
+			'font-awesome.css',
+			fw_get_framework_directory_uri( '/static/libs/font-awesome.css/css/font-awesome.css.min.css' ),
 			array(),
 			fw()->manifest->get_version()
 		);
@@ -481,7 +481,7 @@ final class _FW_Component_Backend {
 		 * https://github.com/ThemeFuse/Unyson/issues/2198
 		 * @deprecated
 		 */
-		wp_register_style('fw-font-awesome', fw_get_framework_directory_uri( '/static/libs/font-awesome/css/font-awesome.min.css' ));
+		wp_register_style('fw-font-awesome.css', fw_get_framework_directory_uri( '/static/libs/font-awesome.css/css/font-awesome.css.min.css' ));
 
 		wp_register_script(
 			'backbone-relational',

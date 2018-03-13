@@ -122,19 +122,24 @@ function radzivillthem_scripts() {
 	wp_enqueue_style( 'radzivillthem-style', get_stylesheet_uri() );
 
 
-	wp_enqueue_style( 'style', get_template_directory_uri() . '/css/style.css' );
-	wp_enqueue_style( 'bootstrap-min-css', get_template_directory_uri() . '/css/bootstrap.min.css' );
-	wp_enqueue_style( 'animate', get_template_directory_uri() . '/css/animate.css' );
-	wp_enqueue_style( 'font-awesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' );
-	wp_enqueue_style( 'media', get_template_directory_uri() . '/css/media.css' );
+
+//	wp_enqueue_style( 'bootstrap-min-css', get_template_directory_uri() . '/css/bootstrap.min.css' );
+//	wp_enqueue_style( 'animate', get_template_directory_uri() . '/css/animate.css' );
+//	wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/css/font-awesome.css' );
+//	wp_enqueue_style( 'media', get_template_directory_uri() . '/css/media.css' );
+//	wp_enqueue_style( 'style', get_template_directory_uri() . '/css/style.css' );
 
 	wp_enqueue_script( 'radzivillthem-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+	//add redirect jquery
+//	wp_deregister_script('jquery');
+//	wp_register_script('jquery', get_template_directory_uri() . '/js/jquery-3.2.1.min.js', false, '3.2.1' );
+//	wp_enqueue_script('jquery');
 
-	wp_enqueue_script( 'bootstrap-min-js', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), ' ' );
-	wp_enqueue_script( 'script', get_template_directory_uri() . '/js/script.js', array('jquery'), ' ');
-	wp_enqueue_script( 'wow', get_template_directory_uri() . '/js/wow.min.js', array('jquery'), ' ' );
-	wp_enqueue_script( 'popper', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js', array('jquery'), ' ' );
-	wp_enqueue_script( 'maps-goog', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBcQMSM28AVgOM92kGziX8UQjjBO5AhqEU&callback=initMap', array('jquery'), ' ' );
+//	wp_enqueue_script( 'bootstrap-min-js', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), false, true);
+//	wp_enqueue_script( 'wow', get_template_directory_uri() . '/js/wow.min.js', array('jquery'), false, true);
+//	wp_enqueue_script( 'popper', get_template_directory_uri() . '/js/popper.min.js', array('jquery'), false, true);
+//	wp_enqueue_script( 'script', get_template_directory_uri() . '/js/script.js', array('jquery'), false, true);
+//	wp_enqueue_script( 'maps-goog', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBcQMSM28AVgOM92kGziX8UQjjBO5AhqEU&callback=initMap', array(''), false, true );
 
 	wp_enqueue_script( 'radzivillthem-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
@@ -175,5 +180,4 @@ require get_template_directory() . '/tgm/radzivillthem.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
-
 

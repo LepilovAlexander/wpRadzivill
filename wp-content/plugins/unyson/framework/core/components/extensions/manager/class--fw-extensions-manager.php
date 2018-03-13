@@ -2980,7 +2980,7 @@ final class _FW_Extensions_Manager
 				$this->get_uri('/static/extensions-page.css'),
 				array(
 					'fw',
-					'fw-unycon', 'font-awesome', // in case some extension has font-icon thumbnail
+					'fw-unycon', 'font-awesome.css', // in case some extension has font-icon thumbnail
 				),
 				fw()->manifest->get_version()
 			);
