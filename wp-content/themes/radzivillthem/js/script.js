@@ -37,31 +37,4 @@ $('body,html').animate({scrollTop: top}, "slow");
 });
 });
 
-// Карта
 
-
-var marker;
-
-function initMap() {
-  var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 15,
-    center: {lat: 50.445245, lng: 30.517976}
-  });
-
-  marker = new google.maps.Marker({
-    map: map,
-    draggable: true,
-    animation: google.maps.Animation.DROP,
-    position: {lat: 50.446442, lng: 30.515787},
-    title:"ТОВ КОНСАЛТИНГОВА КОМПАНІЯ РАДЗІВІЛЛ"
-  });
-  marker.addListener('click', toggleBounce);
-}
-
-function toggleBounce() {
-  if (marker.getAnimation() !== null) {
-    marker.setAnimation(null);
-  } else {
-    marker.setAnimation(google.maps.Animation.BOUNCE);
-  }
-}

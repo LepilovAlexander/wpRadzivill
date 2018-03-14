@@ -94,8 +94,7 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a href="courses" class="nav-link wow bounceInLeft" data-wow-delay="0.6s">Курси
-                        бухгалтерів</a>
+                    <a href="courses" class="nav-link wow bounceInLeft" data-wow-delay="0.6s">Курси бухгалтерів</a>
                 </li>
                 <li class="nav-item">
                     <a href="contacts" class="nav-link wow bounceInLeft"

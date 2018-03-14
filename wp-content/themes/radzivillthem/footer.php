@@ -30,39 +30,38 @@
 				<div class="col-lg-2  co-md-2 col-sm-4 col-xs-6">"> Lorem Ipsum </a> </li>
 
 				  </ul>
-			  </div> -->
-                <div class="col-lg-3 wow zoomInLeft" data-wow-offset="50">
-                    <h3> Мы у соцмережах </h3>
-                    <ul class="social ">
-                        <li id="faceB"><a target="_blank" href="https://www.facebook.com/OlgaRadzivill1"><i
-                                        class=" fa fa-facebook">   </i> </a></li>
+               </div> -->
+               <div class="col-lg-3 wow zoomInLeft" data-wow-offset="50">
+                <h3> Мы у соцмережах </h3>
+                <ul class="social ">
+                    <li id="faceB"><a target="_blank" href="https://www.facebook.com/OlgaRadzivill1"><i
+                        class=" fa fa-facebook">   </i> </a></li>
                         <li id="skype"><a href="skype:radzivill777"><i class="fa fa-skype">   </i> </a>
 
                             <div id="SkypeButton_Call_radzivill777_1">
                             </div>
                         </li>
                         <li id="google"><a href="mailto:cc.radzivill@gmail.com"><i class="fa fa-google-plus">
-                                      </i>
-                            </a></li>
-                    </ul>
-                </div>
+                          </i>
+                    </a></li>
+                </ul>
+            </div>
                 <!--  <form class="form-inline my-2 my-lg-0 wow bounceInRight" data-wow-delay="0.9s">
 			   <button type="button" class="btn btn-outline-primary my-2 my-sm-0" data-toggle="modal" data-target="#myModal">Залишити Заявку</button>
-		   </form> -->
-            </div>
-            <!--/.row-->
-        </div>
-        <!--/.container-->
-    </div>
-    <!--/.footer-->
+           </form> -->
+       </div>
+       <!--/.row-->
+   </div>
+   <!--/.container-->
+</div>
+<!--/.footer-->
 
-    <div class="footer-bottom bg-info">
-        <div class="container text-right text-white wow bounceInRight">
-            <p> © Всі права захищені - Разроблено компанієй <a href="#" class="text-white h5">WF dev.</a></p>
-
-        </div>
+<div class="footer-bottom bg-info">
+    <div class="container text-right text-white wow bounceInRight">
+        <p> © Всі права захищені - Разроблено компанієй <a href="#" class="text-white h5">WF dev.</a></p>
     </div>
-    <!--/.footer-bottom-->
+</div>
+<!--/.footer-bottom-->
 </footer>
 <?php wp_footer(); ?>
 <link rel="stylesheet" href="<?php bloginfo( 'template_directory' ) ?>/css/style.css">
@@ -78,13 +77,11 @@
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="<?php bloginfo( 'template_directory' ) ?>/js/jquery-3.2.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
-        integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
-        crossorigin="anonymous"></script>
+integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+crossorigin="anonymous"></script>
 <script src="<?php bloginfo( 'template_directory' ) ?>/js/bootstrap.min.js"></script>
 <script src="<?php bloginfo( 'template_directory' ) ?>/js/script.js"></script>
-<script type="text/javascript"
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBcQMSM28AVgOM92kGziX8UQjjBO5AhqEU&callback=initMap"
-        async defer></script>
+
 <!--WoW.JS-->
 <script>new WOW().init();</script>
 
