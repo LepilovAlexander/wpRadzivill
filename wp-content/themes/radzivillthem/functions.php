@@ -26,6 +26,7 @@ if ( ! function_exists( 'radzivillthem_setup' ) ) :
 
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
+		add_image_size( 'blog-list', 850, 400, true );
 
 		/*
 		 * Let WordPress manage the document title.
@@ -108,7 +109,7 @@ function radzivillthem_widgets_init() {
 		'description'   => esc_html__( 'Add widgets here.', 'radzivillthem' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="widget-title">',
+		'before_title'  => '<h2 class="widget-title border border-info border-right-0 border-top-0 border-left-0 text-primary pb-2">',
 		'after_title'   => '</h2>',
 	) );
 }
@@ -123,9 +124,9 @@ function radzivillthem_scripts() {
 
 	wp_enqueue_script( 'radzivillthem-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 	//add redirect jquery
-	wp_deregister_script('jquery');
-	wp_register_script('jquery', get_template_directory_uri() . '/js/jquery-3.2.1.min.js', false, '3.2.1' );
-	wp_enqueue_script('jquery');
+	// wp_deregister_script('jquery');
+	// wp_register_script('jquery', get_template_directory_uri() . '/js/jquery-3.2.1.min.js', false, '3.2.1' );
+	// wp_enqueue_script('jquery');
 	wp_enqueue_script( 'radzivillthem-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
@@ -166,3 +167,28 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+function vince_check_active_menu( $menu_item ) {
+	$actual_link = ( isset( $_SERVER['HTTPS'] ) ? "https" : "http" ) . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+	if ( $actual_link == $menu_item->url ) {
+		return 'active';
+	}
+	return '';
+}
+require_once get_template_directory() . '/wp_bootstrap_navwalker.php';
+
+register_nav_menus( array(
+	'primary' => __( 'Primary Menu', 'radzivillthem' ),
+) );
+/**
+ * Добавить фавикон на страницу логина и
+ * в админку WordPress
+ */
+// function mihdan_add_faviconicon() {
+// 	if ( has_site_icon() ) {
+// 		printf( '<link rel="icon" type="image/png" sizes="16x16" href="%s">', get_site_icon_url( 16 ) );
+// 	} else {
+// 		printf( '<link rel="icon" type="image/png" sizes="16x16" href="%s">', get_theme_file_uri( 'favicon.png' ) );
+// 	}
+// }
+// add_action( 'login_head', 'mihdan_add_favicon' );
+// add_action( 'admin_head', 'mihdan_add_favicon' );

@@ -32,9 +32,9 @@
 				  </ul>
                </div> -->
                <div class="col-lg-3 wow zoomInLeft" data-wow-offset="50">
-                <h3> Мы у соцмережах </h3>
+                <h3> Ми у соцмережах </h3>
                 <ul class="social ">
-                    <li id="faceB"><a target="_blank" href="https://www.facebook.com/OlgaRadzivill1"><i
+                    <li id="faceB"><a target="_blank" href="https://www.facebook.com/cc.radzivill"><i
                         class=" fa fa-facebook">   </i> </a></li>
                         <li id="skype"><a href="skype:radzivill777"><i class="fa fa-skype">   </i> </a>
 
@@ -42,6 +42,9 @@
                             </div>
                         </li>
                         <li id="google"><a href="mailto:cc.radzivill@gmail.com"><i class="fa fa-google-plus">
+                          </i>
+                    </a></li>
+                    <li id="yotube"><a target="_blank" href="https://www.youtube.com/playlist?list=PL5rmNkGSZkTuZSz7JJYQjTnZi5KLON7Or&app=desktop"><i class="fa fa-youtube">
                           </i>
                     </a></li>
                 </ul>
@@ -58,17 +61,18 @@
 
 <div class="footer-bottom bg-info">
     <div class="container text-right text-white wow bounceInRight">
-        <p> © Всі права захищені - Разроблено компанієй <a href="#" class="text-white h5">WF dev.</a></p>
+        <p> © Всі права захищені - Разроблено компанієй <a target="_blank" href="https://www.facebook.com/rschattenwald" class="text-white h5">WF dev.</a></p>
     </div>
 </div>
 <!--/.footer-bottom-->
 </footer>
 <?php wp_footer(); ?>
-<link rel="stylesheet" href="<?php bloginfo( 'template_directory' ) ?>/css/style.css">
 <!-- Bootstrap CSS -->
 <link rel="stylesheet" href="<?php bloginfo( 'template_directory' ) ?>/css/bootstrap.min.css">
 <!-- fonts -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="<?php bloginfo( 'template_directory' ) ?>/css/font-awesome.min.css">
+<link rel="stylesheet" href="<?php bloginfo( 'template_directory' ) ?>/css/style.css">
+
 <!-- Animate CSS + WoW.JS -->
 <link rel="stylesheet" href="<?php bloginfo( 'template_directory' ) ?>/css/animate.css">
 <script src="<?php bloginfo( 'template_directory' ) ?>/js/wow.min.js"></script>

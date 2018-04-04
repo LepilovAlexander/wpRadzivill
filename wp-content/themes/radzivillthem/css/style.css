@@ -19,9 +19,13 @@ div.dropdown-menu a.blue-bg:hover{
 a.dropdown-toggle::after{
 	margin-left: -2.745em;
 	vertical-align: -0.7em;
+	margin-right: 4rem;
 }
 div.dropdown-menu{
 	margin: 0.125rem -38px 0;
+}
+header nav div ul li.nav-item-51{
+	padding: 0;
 }
 /*Header wrap*/
 .banner {
@@ -71,7 +75,7 @@ div.dropdown-menu{
 .bg-y{
 	background-color: #ffff00;
 }
-nav.border-b{
+.border-b{
 	border-bottom: 1px solid #ffc107;
 }
 /*footer*/
@@ -214,6 +218,12 @@ nav.border-b{
 		margin: 9px 2px 0 2px;
 		color: #ffff00;
 	}
+	.social li a i.fa-youtube{
+		font-size: 22px;
+		margin: 6px -8px 0 2px;
+		color: #ffff00;
+		
+	}
 
 	.footer-bottom {
 		background: #E3E3E3;
@@ -298,4 +308,29 @@ nav.border-b{
 #google{
 	background-color: #df4b38;
 	border-color: #df4b38;
+}
+#yotube
+{
+	background-color: hsl(0, 100%, 50%);
+	border-color: hsl(0, 100%, 50%);
+}
+/*Contact form CSS fix*/
+div.wpcf7 .screen-reader-response {
+	position: static;
+	overflow: auto;
+	clip: rect(1px, 1px, 1px, 1px);
+	height: 1%;
+	width: 100%;
+	margin: 0;
+	padding: 3.5%;
+	border: 0;
+}
+div.wpcf7 .screen-reader-response ul li{
+	color: #f00;
+}
+/*Widgets*/
+.widget ul li{
+	list-style-type: none;
+	margin-bottom: 10px;
+	font-size: 1.3rem;
 }
