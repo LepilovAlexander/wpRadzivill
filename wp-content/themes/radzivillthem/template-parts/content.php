@@ -41,7 +41,7 @@
 					the_content( sprintf(
 						wp_kses(
 							/* translators: %s: Name of current post. Only visible to screen readers */
-							__('...<p class="screen-reader-text">Читати далі:  "%s"</p>', 'radzivillthem' ),
+							__('<p class="screen-reader-text">Читати далі:  "%s"</p>', 'radzivillthem' ),
 							array(
 								'p' => array(
 									'class' => array(),

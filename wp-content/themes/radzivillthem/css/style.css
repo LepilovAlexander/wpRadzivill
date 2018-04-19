@@ -9,6 +9,22 @@ p-0{
 	padding: 0;
 }
 /*Навигация*/
+#main-menu li, .google-font{
+	font-family: 'Cormorant Infant', serif;
+}
+.main-blue-bg{
+	background-color: rgba(0, 147, 223, 1);
+}
+.main-blue-transperent-bg{
+	background-color: rgba(0, 147, 223, .8);
+}
+/*Языки*/
+div#lang select{
+	background-color: #007bff;
+	color: white;
+	border: 1px solid #ffc107;
+	border-radius: 3px;
+}
 .navbar-dark .navbar-nav a.nav-link{
 	font-size: 30px;
 }
@@ -17,10 +33,11 @@ div.dropdown-menu a.blue-bg:hover{
 	background-color: #007bff;
 }
 a.dropdown-toggle::after{
-	margin-left: -2.745em;
+	margin-left: -2.25em;
 	vertical-align: -0.7em;
-	margin-right: 4rem;
+	margin-right: 3rem;
 }
+
 div.dropdown-menu{
 	margin: 0.125rem -38px 0;
 }
@@ -71,7 +88,10 @@ header nav div ul li.nav-item-51{
 	background-size: cover;
 
 }
+a#header-adress:hover{
+	text-decoration: none;
 
+}
 .bg-y{
 	background-color: #ffff00;
 }
@@ -333,4 +353,59 @@ div.wpcf7 .screen-reader-response ul li{
 	list-style-type: none;
 	margin-bottom: 10px;
 	font-size: 1.3rem;
+}
+/*testimonial form*/
+.wpmtst-submit label input#wpmtst_submit_testimonial{
+	color: #ffff00;
+	background-color: transparent;
+	background-image: none;
+	display: inline-block;
+	font-weight: 400;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	user-select: none;
+	border: 1px solid #ffff00;
+	padding: .375rem .75rem;
+	font-size: 1rem;
+	line-height: 1.5;
+	border-radius: .25rem;
+	transition: background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.wpmtst-submit label input#wpmtst_submit_testimonial:hover{
+	color: #49a1ff;
+	background-color: #ffff00;
+	border-color: #ffff00;
+}
+/*Хлебные крошки для блога*/
+
+ol.breadcrumb a:hover {
+	color: #ffffff;
+}
+span.current{
+	color: #d5cbcb;
+}
+/*Categories widget*/
+span.num-s{
+	background-color: #007bff;
+	padding: 0px 9px 1px 9px;
+}
+/*Комментарии*/
+.comment-list,
+.children{
+	list-style-type: none;
+}
+.avatar{
+	width: 100px;
+	height: 100px;
+	border-radius: 5px;
+
+}
+/*admin-bar*/
+
+.fixed{
+	position:fixed;
+	width: 100%;
+	z-index: 100;
+	top: 0;
 }

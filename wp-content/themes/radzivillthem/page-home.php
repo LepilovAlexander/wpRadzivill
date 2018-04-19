@@ -15,25 +15,6 @@ get_header(); ?>
                 <div class="row text-left text-white">
                     <div class="col-lg-8 my-5 ml-5">
                         <h1 class="wow bounceIn" data-wow-delay="1.2s">
-                            <!-- Facebook Pixel Code -->
-                            <script>
-                                !function(f,b,e,v,n,t,s)
-                                {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-                                    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-                                    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-                                    n.queue=[];t=b.createElement(e);t.async=!0;
-                                    t.src=v;s=b.getElementsByTagName(e)[0];
-                                    s.parentNode.insertBefore(t,s)}(window,document,'script',
-                                        'https://connect.facebook.net/en_US/fbevents.js');
-                                    fbq('init', '1684248644956460'); 
-                                    fbq('track', 'PageView');
-                                </script>
-                                <noscript>
-                                   <img height="1" width="1" 
-                                   src="https://www.facebook.com/tr?id=1684248644956460&ev=PageView
-                                   &noscript=1"/>
-                               </noscript>
-                               <!-- End Facebook Pixel Code -->
                                Ви працюєте,<br>
                            а все решта - наша турбота!</h1>
 
@@ -105,8 +86,8 @@ get_header(); ?>
                                 <div class="card-body">
 
                                     <a href="accounting"><img
-                                        src="<?php bloginfo( 'template_directory' ) ?>/img/item-1.jpg"
-                                        alt="" class="card-img"></a>
+                                        src="<?php bloginfo( 'template_directory' ) ?>/img/item-1.jpg" title="Accounting image"
+                                        alt="Бухгалтерскі послуги" class="card-img"></a>
                                     </div>
                                     <a href="accounting" class="btn btn-info">Детальніше...</a>
                                 </div>
@@ -121,8 +102,8 @@ get_header(); ?>
                                     <div class="card-header"><h4>Юридичні послуги</h4></div>
                                     <div class="card-body">
                                         <a href="juristic">
-                                            <img src="<?php bloginfo( 'template_directory' ) ?>/img/item-2.jpg" alt=""
-                                            class="card-img">
+                                            <img src="<?php bloginfo( 'template_directory' ) ?>/img/item-2.jpg" alt="Юридичні послуги"
+                                            class="card-img" title="Juristic page">
                                         </a>
                                     </div>
                                     <a href="juristic" class="btn btn-primary">Детальніше...</a>
@@ -138,7 +119,7 @@ get_header(); ?>
         <div class="card-header"><h4>Розробка сайтів</h4></div>
         <div class="card-body">
           <a href="development">
-            <img src="<?php bloginfo( 'template_directory' ) ?>/img/item-3.jpg" alt="" class="card-img">
+            <img src="<?php //bloginfo( 'template_directory' ) ?>/img/item-3.jpg" alt="Розробка сайтів" title="Development page" class="card-img">
           </a>
         </div>
         <a href="development" class="btn btn-info">Детальніше...</a>
@@ -154,7 +135,7 @@ get_header(); ?>
       <div class="card-header"><h4>Підбір персоналу</h4>
       </div>
       <div class="card-body">
-        <a href="personnel"><img src="<?php bloginfo( 'template_directory' ) ?>/img/item-4.jpg" alt="" class="card-img"></a>
+        <a href="personnel"><img src="<?php //bloginfo( 'template_directory' ) ?>/img/item-4.jpg" alt="Підбір персоналу" title="Personnel page" class="card-img"></a>
       </div>
       <a href="personnel" class="btn btn-info">Детальніше...</a>
     </div>
@@ -171,7 +152,7 @@ get_header(); ?>
 
                 <a href="holidays"><img
                     src="<?php bloginfo( 'template_directory' ) ?>/img/item-5.jpg"
-                    alt="" class="card-img"></a>
+                    alt="Відпустка на 1-2-3!" title="Holidays page" class="card-img"></a>
                 </div>
                 <a href="holidays" class="btn btn-info">Детальніше...</a>
             </div>
@@ -218,7 +199,6 @@ get_header(); ?>
 </div>
 </div>
 </section>
-
 </main><!-- #main -->
 </div><!-- #primary -->
 

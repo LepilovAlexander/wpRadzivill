@@ -9,22 +9,43 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
+<div id="primary" class="content-area">
+	<main id="main" class="site-main">
 
 		<?php
 		if ( have_posts() ) : ?>
 
-			<header class="page-header">
-				<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
-					the_archive_description( '<div class="archive-description">', '</div>' );
-				?>
-			</header><!-- .page-header -->
+		<header class="page-header">
+			<div class="bg-info wow bounceInRight" data-wow-delay="1.3s">
+				<div class="container justify-content-center text-white">
+					<div class="row">
+						<?php
+						the_archive_title( '<h1 class="page-title">', '</h1>' );
+						the_archive_description( '<div class="archive-description">', '</div>' );
+						?>
 
-			<?php
-			/* Start the Loop */
-			while ( have_posts() ) : the_post();
+					</div>
+				</div>
+			</div>
+			<!-- breadcrumb -->
+			<div class="container pt-3 wow bounceInUp" data-wow-delay="0.6s>
+				<div class="row ">
+					<div class="col-12">
+						<nav aria-label="breadcrumb">
+							<ol>
+								<?php if (function_exists('dimox_breadcrumbs')) dimox_breadcrumbs(); ?>
+							</ol>
+						</nav>
+					</div>
+				</div>
+			</div><!-- breadcrumb end-->
+		</header><!-- .page-header -->
+		<div class="container justify-content-center pt-3 pb-3">
+			<div class="row">
+				<div class="col-lg-8 col-sm-12 wow bounceInLeft" data-wow-delay="1.3s">
+					<?php
+					/* Start the Loop */
+					while ( have_posts() ) : the_post();
 
 				/*
 				 * Include the Post-Type-specific template for the content.
@@ -41,11 +62,12 @@ get_header(); ?>
 
 			get_template_part( 'template-parts/content', 'none' );
 
-		endif; ?>
+			endif; ?>
+		</div>
+		<?php get_sidebar();?>
+	</div>
+</div>
+</main><!-- #main -->
+</div><!-- #primary -->
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
-<?php
-get_sidebar();
-get_footer();
+<?php get_footer();?>

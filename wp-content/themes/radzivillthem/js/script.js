@@ -36,4 +36,24 @@ top = $(id).offset().top;
 $('body,html').animate({scrollTop: top-50}, "slow");
 });
 });
+// Sticku-menu
+$(document).ready(function(){
 
+  var $menu = $("#main-menu");
+
+  $(window).scroll(function(){
+    if ( $(this).scrollTop() > 100 && $menu.hasClass("sticky-jq") ){
+      $menu.fadeOut('fast',function(){
+        $(this).removeClass("sticky-jq main-blue-bg")
+        .addClass("fixed transbg border-b main-blue-transperent-bg")
+        .fadeIn('fast');
+      });
+    } else if($(this).scrollTop() <= 100 && $menu.hasClass("fixed")) {
+      $menu.fadeOut('fast',function(){
+        $(this).removeClass("fixed transbg border-b main-blue-transperent-bg")
+        .addClass("sticky-jq main-blue-bg")
+        .fadeIn('fast');
+      });
+    }
+  });        
+});

@@ -11,8 +11,21 @@ get_header(); ?>
 
 <div id="primary" class="content-area">
 	<main id="main" class="site-main">
+		<!-- breadcrumb -->
+		<div class="container pt-3 wow bounceInUp" data-wow-delay="0.6s>
+			<div class="row ">
+				<div class="col-12">
+					<nav aria-label="breadcrumb">
+						<ol>
+							<?php if (function_exists('dimox_breadcrumbs')) dimox_breadcrumbs(); ?>
+						</ol>
+					</nav>
+				</div>
+			</div>
+		</div><!-- breadcrumb end-->
 		<div class="container justify-content-center pt-3 pb-3">
 			<div class="row">
+
 				<div class="col-lg-8 col-sm-12 wow bounceInLeft" data-wow-delay="1.3s">
 					<?php
 					while ( have_posts() ) : the_post();
