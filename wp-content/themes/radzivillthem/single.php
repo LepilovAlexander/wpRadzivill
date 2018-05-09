@@ -12,8 +12,8 @@ get_header(); ?>
 <div id="primary" class="content-area">
 	<main id="main" class="site-main">
 		<!-- breadcrumb -->
-		<div class="container pt-3 wow bounceInUp" data-wow-delay="0.6s>
-			<div class="row ">
+		<div class="container pt-3 wow bounceInUp" data-wow-delay="0.6s">
+			<div class="row">
 				<div class="col-12">
 					<nav aria-label="breadcrumb">
 						<ol>

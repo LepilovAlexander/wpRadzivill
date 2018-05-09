@@ -27,58 +27,77 @@ if ( post_password_required() ) {
 			<?php
 	// You can start editing here -- including this comment!
 			if ( have_comments() ) : ?>
-			<h3 class="comments-title pt-1 pb-2 text-info">
-				<?php
-				$comment_count = get_comments_number();
-				if ( '1' === $comment_count ) {
-					printf(
-						/* translators: 1: title. */
-						esc_html__( 'Залишен перший коментар на статтю &ldquo;%1$s&rdquo;!', 'radzivillthem' ),
-						'<span>' . get_the_title() . '</span>'
-					);
-				} else {
+				<h3 class="comments-title pt-1 pb-2 text-info">
+					<?php
+					$comment_count = get_comments_number();
+					if ( '1' === $comment_count ) {
+						if ($_SERVER["REQUEST_URI"] == '/vidguky/'){
+							printf(
+								/* translators: 1: title. */
+								esc_html__( 'Залишен перший відгук!','radzivillthem' ),
+								'<span>' . get_the_title() . '</span>'
+							);
+						}
+						else{
+							printf(
+								/* translators: 1: title. */
+								esc_html__( 'Залишен перший коментар на  &rdquo;%1$s!&rdquo;', 'radzivillthem' ),
+								'<span>' . get_the_title() . '</span>'
+							);
+						}
+					} else {
+						if ($_SERVER["REQUEST_URI"] == '/vidguky/'){
 				printf( // WPCS: XSS OK.
 					/* translators: 1: comment count number, 2: title. */
-					esc_html( _nx( '%1$s  &ldquo;%2$s&rdquo;', 'Залишено коментарів: %1$s на статтю &ldquo;%2$s&rdquo;', $comment_count, 'comments title', 'radzivillthem' ) ),
+					esc_html( _nx( '%1$s  &ldquo;%2$s&rdquo;', 'Всьюго залишено відгуків: %1$s', $comment_count, 'comments title', 'radzivillthem' ) ),
 					number_format_i18n( $comment_count ),
 					'<span>' . get_the_title() . '</span>'
 				);
 			}
-			?>
-		</h3><!-- .comments-title -->
+			else{
+				printf( // WPCS: XSS OK.
+					/* translators: 1: comment count number, 2: title. */
+					esc_html( _nx( '%1$s  &ldquo;%2$s&rdquo;', 'Залишено коментарів: %1$s на %2$s', $comment_count, 'comments title', 'radzivillthem' ) ),
+					number_format_i18n( $comment_count ),
+					'<span>' . get_the_title() . '</span>'
+				);
+			}
+		}
+		?>
+	</h3><!-- .comments-title -->
 
-		<?php the_comments_navigation(); ?>
-		<div class="container">
-			<div class="row">
-				<ol class="comment-list list-group pb-3 col-12">
-					<?php
-					wp_list_comments( array(
-						'style'      => 'ol ',
-						'short_ping' => true,
-						'callback' => 'radzivilltheme_list_comment'
-					) );
-					?>
-				</ol>
-			</div>
+	<?php the_comments_navigation(); ?>
+	<div class="container">
+		<div class="row">
+			<ol class="comment-list list-group pb-3 col-12">
+				<?php
+				wp_list_comments( array(
+					'style'      => 'ol ',
+					'short_ping' => true,
+					'callback' => 'radzivilltheme_list_comment'
+				) );
+				?>
+			</ol>
 		</div>
-		<!-- .comment-list -->
-		<?php
+	</div>
+	<!-- .comment-list -->
+	<?php
     // Are there comments to navigate through?
-		if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) :
-			?>
-			<nav class="navigation comment-navigation" role="navigation">
-				<h3 class="screen-reader-text section-heading"><?php esc_html_e( 'Comment navigation', 'radzivillthem' ); ?></h3>
-				<div class="nav-previous"><?php previous_comments_link( __( '&larr; Older Comments', 'radzivillthem' ) ); ?></div>
-				<div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;', 'radzivillthem' ) ); ?></div>
-			</nav><!-- .comment-navigation -->
-		<?php endif; // Check for comment navigation ?>
-		<?php the_comments_navigation();
+	if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) :
+		?>
+	<nav class="navigation comment-navigation" role="navigation">
+		<h3 class="screen-reader-text section-heading"><?php esc_html_e( 'Comment navigation', 'radzivillthem' ); ?></h3>
+		<div class="nav-previous"><?php previous_comments_link( __( '&larr; Older Comments', 'radzivillthem' ) ); ?></div>
+		<div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;', 'radzivillthem' ) ); ?></div>
+	</nav><!-- .comment-navigation -->
+<?php endif; // Check for comment navigation ?>
+<?php the_comments_navigation();
 
 		// If comments are closed and there are comments, let's leave a little note, shall we?
-		if ( ! comments_open() ) : ?>
-		<p class="no-comments"><?php esc_html_e( 'Коментарі закриті', 'radzivillthem' ); ?></p>
-		<?php
-	endif;
+if ( ! comments_open() ) : ?>
+	<p class="no-comments"><?php esc_html_e( 'Коментарі закриті', 'radzivillthem' ); ?></p>
+	<?php
+endif;
 
 	endif; // Check for have_comments().
 	?>

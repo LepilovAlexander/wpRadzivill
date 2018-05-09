@@ -1,6 +1,4 @@
 body{
-
-
 	-webkit-font-smoothing: antialiased;
 	-webkit-overflow-scrolling: touch;
 }
@@ -9,6 +7,11 @@ p-0{
 	padding: 0;
 }
 /*Навигация*/
+.active{
+	pointer-events: none;
+	cursor: default;
+	
+}
 #main-menu li, .google-font{
 	font-family: 'Cormorant Infant', serif;
 }
@@ -41,7 +44,7 @@ a.dropdown-toggle::after{
 div.dropdown-menu{
 	margin: 0.125rem -38px 0;
 }
-header nav div ul li.nav-item-51{
+header nav div ul li.dropdown-header{
 	padding: 0;
 }
 /*Header wrap*/
@@ -282,22 +285,28 @@ a#header-adress:hover{
 	}
 
 	#go-top {
+		background-color: rgba(0, 147, 223, 0.7);
 		position: fixed; 
-		bottom: 7%; 
-		right: 7%;
+		bottom: 2rem; 
+		right: 3.5rem;
 		text-align: center;
 		cursor:pointer; 
 		display:none;
-		width: 7%;
-		height: 9%;
-		/* background: #c0c0c0;*/
-		/*line-height: 30px;*/
-		/*border-radius: 5px;*/
+		border: 1px solid #ffc107;
+		border-radius: 5px;
+		color: rgba(255, 193, 7, 1);
+		text-align: center;
+	}
+	a#go-top{
+		width: 6rem;
+		min-height: 4rem;
 	}
 
 	#go-top:hover {
 		/* background: #333;*/
-		color: #000;
+		color: rgba(170, 129, 5, 1);
+		border-bottom: 2px solid #ffc107;
+		border-right: 2px solid #ffc107;
 	}
 	.fa-arrow-circle-up:before {
 		content: "\f0aa";
@@ -376,6 +385,9 @@ div.wpcf7 .screen-reader-response ul li{
 	color: #49a1ff;
 	background-color: #ffff00;
 	border-color: #ffff00;
+}
+h3#reply-title{
+	color: #17a2b8;
 }
 /*Хлебные крошки для блога*/
 

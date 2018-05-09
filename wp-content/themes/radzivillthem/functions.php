@@ -191,7 +191,7 @@ register_nav_menus( array(
 function dimox_breadcrumbs() {
 
 	/* === ОПЦИИ === */
-  $text['home'] = 'Блог'; // текст ссылки "Главная"
+  $text['home'] = 'Головна'; // текст ссылки "Главная"
   $text['category'] = '%s'; // текст для страницы рубрики
   $text['search'] = 'Результати пошуку по запросу "%s"'; // текст для страницы с результатами поиска
   $text['tag'] = 'Записи с тегом "%s"'; // текст для страницы тега
@@ -213,7 +213,7 @@ function dimox_breadcrumbs() {
   /* === КОНЕЦ ОПЦИЙ === */
 
   global $post;
-  $home_url = home_url('blog');
+  $home_url = home_url('/');
   $link_before = '<li itemprop="itemListElement" itemscope class="breadcrumb-item" aria-current="page">';
   $link_after = '</li>';
   $link_attr = ' itemprop="item"';
@@ -476,4 +476,13 @@ function kama_adminbar_styles(){
       #adminmenu{ margin-top:48px !important; }
     }
   </style>')."\n";
+}
+// Delete all tags type
+add_filter('style_loader_tag', 'clean_style_tag');
+function clean_style_tag($src) {
+    return str_replace("type='text/css'", '', $src);
+}
+add_filter('script_loader_tag', 'clean_script_tag');
+function clean_script_tag($src) {
+    return str_replace("type='text/javascript'", '', $src);
 }
