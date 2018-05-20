@@ -18,9 +18,7 @@ p-0{
 .main-blue-bg{
 	background-color: rgba(0, 147, 223, 1);
 }
-.main-blue-transperent-bg{
-	background-color: rgba(0, 147, 223, .8);
-}
+
 /*Языки*/
 div#lang select{
 	background-color: #007bff;
@@ -71,7 +69,6 @@ header nav div ul li.dropdown-header{
 
 #opasity-block {
 	background-color: rgba(0, 0, 0, 0.5);
-
 	margin-top: -20px;
 	padding-top:20px;
 	text-align:center;
@@ -101,6 +98,17 @@ a#header-adress:hover{
 .border-b{
 	border-bottom: 1px solid #ffc107;
 }
+#main-menu.fixed {
+    width:100%;
+    position: fixed;
+    top: 0;
+    border-bottom: 1px solid #ffc107;
+    background-color: rgba(0, 147, 223, .8);
+
+ }
+/*#main-menu.fixed ~ .wrap {
+  margin-top:80px;
+}*/
 /*footer*/
 .full {
 	width: 100%;	

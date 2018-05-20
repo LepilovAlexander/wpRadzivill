@@ -1,6 +1,6 @@
 // arrow
 $(document).ready(function(){
-  $('body').append('<a href="#" id="go-top" title="Вверх"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></a>');
+  $('body').append('<a href="#" id="go-top" title="Вверх" class="wow zoomIn"><i class="fa fa-arrow-circle-up wow zoomIn" aria-hidden="true"></i></a>');
 });
 
 $(function() {
@@ -37,23 +37,31 @@ $('body,html').animate({scrollTop: top-50}, "slow");
 });
 });
 // Sticku-menu
-$(document).ready(function(){
+// $(document).ready(function(){
 
-  var $menu = $("#main-menu");
+//   var $menu = $("#main-menu");
 
-  $(window).scroll(function(){
-    if ( $(this).scrollTop() > 100 && $menu.hasClass("sticky-jq") ){
-      $menu.fadeOut('fast',function(){
-        $(this).removeClass("sticky-jq main-blue-bg")
-        .addClass("fixed transbg border-b main-blue-transperent-bg")
-        .fadeIn('fast');
-      });
-    } else if($(this).scrollTop() <= 100 && $menu.hasClass("fixed")) {
-      $menu.fadeOut('fast',function(){
-        $(this).removeClass("fixed transbg border-b main-blue-transperent-bg")
-        .addClass("sticky-jq main-blue-bg")
-        .fadeIn('fast');
-      });
-    }
-  });        
+//   $(window).scroll(function(){
+//     if ( $(this).scrollTop() > 100 && $menu.hasClass("sticky-jq") ){
+//       $menu.fadeOut('fast',function(){
+//         $(this).removeClass("sticky-jq main-blue-bg")
+//         .addClass("fixed transbg border-b main-blue-transperent-bg")
+//         .fadeIn('fast');
+//       });
+//     } else if($(this).scrollTop() <= 100 && $menu.hasClass("fixed")) {
+//       $menu.fadeOut('fast',function(){
+//         $(this).removeClass("fixed transbg border-b main-blue-transperent-bg")
+//         .addClass("sticky-jq main-blue-bg")
+//         .fadeIn('fast');
+//       });
+//     }
+//   });        
+// });
+$(window).scroll(function(){
+      if ($(this).scrollTop() > 100) {
+          $('#main-menu').addClass('fixed wow zoomIn');
+          
+      } else {
+          $('#main-menu').removeClass('fixed wow zoomIn');
+      }
 });

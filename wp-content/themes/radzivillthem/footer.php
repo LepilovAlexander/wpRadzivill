@@ -31,7 +31,7 @@
 
 				  </ul>
        </div> -->
-       <div class="col-lg-3">
+       <div class="col-lg-3 wow zoomIn">
         <h3> Ми у соцмережах </h3>
         <ul class="social ">
           <li id="faceB"><a target="_blank" href="https://www.facebook.com/cc.radzivill"><i
@@ -60,7 +60,7 @@
  <!--/.footer-->
 
  <div class="footer-bottom bg-info">
-  <div class="container text-right text-white">
+  <div class="container text-right text-white wow zoomIn">
     <p> © Всі права захищені - Разроблено компанієй <a target="_blank" href="https://www.facebook.com/rschattenwald" class="text-white h5">WF dev.</a></p>
   </div>
 </div>
@@ -84,7 +84,6 @@
  integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
  crossorigin="anonymous"></script>
  <script src="<?php bloginfo( 'template_directory' ) ?>/js/script.js"></script>
-
  <!--WoW.JS-->
  <script>new WOW().init();</script>
  <script src='https://www.google.com/recaptcha/api.js'></script>
