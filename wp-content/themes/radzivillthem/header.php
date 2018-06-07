@@ -39,8 +39,15 @@
         gtag('config', 'UA-116784860-1');
 
     </script>
-
-    <?php wp_head(); ?>
+    <!-- Event snippet for radzivill.com.ua conversion page -->
+    <script>
+      gtag('event', 'conversion', {
+          'send_to': 'AW-814441492/om-GCPaI-4IBEJTIrYQD',
+          'value': 2.0,
+          'currency': 'UAH'
+      });
+  </script>
+  <?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>

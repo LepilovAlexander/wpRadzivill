@@ -296,7 +296,7 @@ a#header-adress:hover{
 		background-color: rgba(0, 147, 223, 0.7);
 		position: fixed; 
 		bottom: 2rem; 
-		right: 3.5rem;
+		left: 3.5rem;
 		text-align: center;
 		cursor:pointer; 
 		display:none;

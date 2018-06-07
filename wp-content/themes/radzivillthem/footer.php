@@ -67,27 +67,32 @@
 <!--/.footer-bottom-->
 </footer>
 <?php wp_footer(); ?>
- <!-- Bootstrap CSS -->
- <link rel="stylesheet" href="<?php bloginfo( 'template_directory' ) ?>/css/bootstrap.min.css">
- <!-- fonts -->
- <link rel="stylesheet" href="<?php bloginfo( 'template_directory' ) ?>/css/font-awesome.min.css">
- <link rel="stylesheet" href="<?php bloginfo( 'template_directory' ) ?>/css/style.css">
+<!-- BEGIN JIVOSITE CODE {literal} -->
+<script type='text/javascript'>
+  (function(){ var widget_id = 'vhC5BsGpMI';var d=document;var w=window;function l(){
+  var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();</script>
+  <!-- {/literal} END JIVOSITE CODE -->
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="<?php bloginfo( 'template_directory' ) ?>/css/bootstrap.min.css">
+  <!-- fonts -->
+  <link rel="stylesheet" href="<?php bloginfo( 'template_directory' ) ?>/css/font-awesome.min.css">
+  <link rel="stylesheet" href="<?php bloginfo( 'template_directory' ) ?>/css/style.css">
 
- <!-- Animate CSS + WoW.JS -->
- <link rel="stylesheet" href="<?php bloginfo( 'template_directory' ) ?>/css/animate.css">
- <script src="<?php bloginfo( 'template_directory' ) ?>/js/wow.min.js"></script>
+  <!-- Animate CSS + WoW.JS -->
+  <link rel="stylesheet" href="<?php bloginfo( 'template_directory' ) ?>/css/animate.css">
+  <script src="<?php bloginfo( 'template_directory' ) ?>/js/wow.min.js"></script>
 
- <!-- Optional JavaScript -->
- <!-- jQuery first, then Popper.js, then Bootstrap JS -->
- <script src="<?php bloginfo( 'template_directory' ) ?>/js/jquery-3.2.1.min.js"></script>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
- integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
- crossorigin="anonymous"></script>
- <script src="<?php bloginfo( 'template_directory' ) ?>/js/script.js"></script>
- <!--WoW.JS-->
- <script>new WOW().init();</script>
- <script src='https://www.google.com/recaptcha/api.js'></script>
- <!-- Bootstrap JS -->
- <script src="<?php bloginfo( 'template_directory' ) ?>/js/bootstrap.min.js"></script>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="<?php bloginfo( 'template_directory' ) ?>/js/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+  integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+  crossorigin="anonymous"></script>
+  <script src="<?php bloginfo( 'template_directory' ) ?>/js/script.js"></script>
+  <!--WoW.JS-->
+  <script>new WOW().init();</script>
+  <script src='https://www.google.com/recaptcha/api.js'></script>
+  <!-- Bootstrap JS -->
+  <script src="<?php bloginfo( 'template_directory' ) ?>/js/bootstrap.min.js"></script>
 </body>
 </html>
